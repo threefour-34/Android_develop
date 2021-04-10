@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO DO LIST!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:orientation="vertical"
+        android:layout_height="50dp"
+        android:layout_width="match_parent">
+        <Button
+            android:id="@+id/add_new"
+            android:layout_width="0"
+            android:layout_height="wrap_content"
+            android:weight="1"
+            android:text="Add New Schedule"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/haven_added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RecyclerView
+            android:id="@+id/show_added"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constrainBottom_toBottomOf="parent"
+            app:layout_constrainLeft_toLeftOf="parent"
+            app:layout_constrainRight_toRightOf="parent"
+            app:layout_constrainTop_toTopOf="parent"
+            />
+        <!--是不是应该在点击了Show All Schedules的button后再出现一个新的页面-->
+        <!--用来显示已经添加的日程，滚动查看数据-->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/to_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_page"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Schedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date:"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/data"
+        android:hint="日期"
+        android:inputType="date"
+        android:maxLines="3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Topic:"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topic"
+        android:hint="主题"
+        android:inputType="text"
+        android:maxLines="3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule:"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/schedule"
+        android:hint="计划"
+        android:inputType="text"
+        android:maxLines="5"/>
+    <!--maxLine用来指定EditText的最大行数为几行-->
+
+    <Button
+        android:id="@+id/add_Success"
+        android:layout_width="match_patent"
+        android:layout_height="wrap_content"
+</LinearLayout>

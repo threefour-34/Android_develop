@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical">
+
+    <!--this is for the items shown in the Recycler_view in activity_main.xml-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:weight="1"
+        android:text="Date:"/>
+    <!--如何获取数据？？？-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:weight="1"
+        android:text="Topic:"/>
+    <Button
+        android:id="@+id/delete_schedule"
+        android:layout_width="0"
+        android:weight="1"
+        android:layout_height="wrap_content"
+        android:text="Delete"/>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.todolist">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TODOLIST">
+        <activity android:name=".MainActivity"
+            android:label="To Do List"
+            android:launchMode="singleTask">
+            <!--launch_mode——standard    singleTop启动活动时发现该活动已经在栈顶，直接启动，不创建新的活动实例
+            singleTask 在返回栈中检查是否存在该活动的实例，若存在，则直接使用该实例
+            singleInstance 共享活动实例-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="add_page"></activity>
+
+    </application>
+
+</manifest>
